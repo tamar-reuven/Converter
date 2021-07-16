@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="305dp"
+        android:layout_height="96dp"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:gravity="center"
+        android:text="SELECT A CATEGORY:"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="681dp"
+        android:layout_height="278dp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView"
+        app:layout_constraintVertical_bias="0.16">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/tempButton"
+                android:layout_width="100dp"
+                android:layout_height="128dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/costum_button"
+                android:drawableTop="@drawable/ic_ac_unit_black_24dp"
+                android:fadingEdge="horizontal|vertical"
+                android:fontFamily="@font/bowlby_one_sc"
+                android:text="TEMPERATURE"
+                android:textColor="#FF9800"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/distAndMeasButton"
+                android:layout_width="100dp"
+                android:layout_height="128dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/costum_button"
+                android:drawableTop="@drawable/ic_directions_walk_black_24dp"
+                android:fadingEdge="horizontal|vertical"
+                android:fontFamily="@font/bowlby_one_sc"
+                android:text="DISTANCE"
+                android:textColor="#FF9800"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/weightButton"
+                android:layout_width="100dp"
+                android:layout_height="128dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/costum_button"
+                android:drawableTop="@drawable/ic_fitness_center_black_24dp"
+                android:fontFamily="@font/bowlby_one_sc"
+                android:text="WEIGHT"
+                android:textColor="#FF9800"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/rateButton"
+                android:layout_width="100dp"
+                android:layout_height="128dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/costum_button"
+                android:drawableTop="@drawable/ic_euro_symbol_black_24dp"
+                android:fontFamily="@font/bowlby_one_sc"
+                android:text="EXCHANGE RATE"
+                android:textColor="#FF9800"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/shoeButton"
+                android:layout_width="100dp"
+                android:layout_height="128dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/costum_button"
+                android:drawableTop="@drawable/ic_airline_seat_legroom_extra_black_24dp"
+                android:fontFamily="@font/bowlby_one_sc"
+                android:text="SHOE SIZE"
+                android:textColor="#FF9800"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bakingButton"
+                android:layout_width="100dp"
+                android:layout_height="128dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/costum_button"
+                android:drawableTop="@drawable/ic_cake_black_24dp"
+                android:fontFamily="@font/bowlby_one_sc"
+                android:text="BAKING"
+                android:textColor="#FF9800"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
